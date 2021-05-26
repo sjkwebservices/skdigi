@@ -1,2 +1,2 @@
 # skdigi
-Express React App - SPO Data
+Amplify AWS React App - SPO Data
