@@ -1,18 +1,22 @@
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.scss';
 
 import {PrimaryButton} from '@fluentui/react';
+import { Icon } from '@fluentui/react/lib/Icon';
 
+//fluent components
+import {BreadcrumbBasicExample} from './components/Breadcrumbs';
+
+
+//all classes need to be replace by sass styles.className
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className={styles.App}>
+      <div className={styles.container}>
+        <BreadcrumbBasicExample />
         <PrimaryButton text="welcome" />
-      </header>
+        <Icon iconName="SharePointAppIcon16"/>
+      </div>
     </div>
   );
 }

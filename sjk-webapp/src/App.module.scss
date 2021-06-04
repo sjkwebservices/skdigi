@@ -1,0 +1,20 @@
+@import '~npm install @fluentui/react/dist/sass/References.scss';
+
+.App{
+  .container {
+    max-width: 100%;
+    margin: 0px auto;
+  }
+  .row {
+    @include ms-Grid-row;
+    color:black;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .col12 {
+    @include ms-Grid-col;
+    @include ms-sm12;
+  }
+
+}
