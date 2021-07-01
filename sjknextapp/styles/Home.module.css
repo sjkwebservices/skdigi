@@ -1,0 +1,20 @@
+.overlayImage-white{
+  /*object-fit: cover;
+  background: rgb(219,219,219);
+  background: linear-gradient(173deg, rgba(219,219,219,1) 0%, rgba(108,60,12,1) 60%, rgba(150,150,150,1) 98%);
+  color:white;*/
+}
+
+.grayLayer{
+  background-color: gray;
+  color:white;
+  min-width:100%;
+}
+
+.heroImageOverlay{
+  object-fit: cover;
+  background: url(../img/jumbo-02.png) no-repeat;
+}
+.fontWhite{
+  color:white
+}
