@@ -1,8 +1,10 @@
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 
 import * as bs from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from '../components/NavBar';
+import { CardNoButton } from '../components/CardNoButton';
+
 
 export default function Home() {
   return (
@@ -22,33 +24,61 @@ export default function Home() {
           </bs.Col>
         </bs.Row>
       </bs.Container>
-      <bs.Container fluid>
+      <bs.Container fluid >
         <bs.Row>
-          <bs.Col className={styles.heroImageOverlay} >
-              <div className={styles.fontWhite}>
-                <h1>Synergize your employees and projects</h1>
-                <p>
-                  Digitialise your employees workspaces<br/>
-                  Empower your employees to work anywhere<br/>
-                  We mix the right Apps, tools and modern services into your employees hands <br/>
-                  With the right balance of producivity and security...<br/>
-                  Your employess will love remote working, feeling secure and comfortable in their digital workspace.
-                </p>
-                <ul>
-                  <li>Reduce operational and capital expenditure on IT</li>
-                  <li>Increase revenue</li>
-                  <li>Increase flexibility</li>
-                  <li>Empower staff to be collaborative, creative and agile</li>
-                  <li>Increase business performance</li>
-                  <li>Strengthen talent recruitment and retention</li>
-                </ul>
-                <p>
-                </p>
+          <bs.Col sm={12} className={ styles.heroImageOverlay }>
+            <div className={styles.fontWhite}>
+              <h1>Connect your employees</h1>
             </div>
           </bs.Col>
         </bs.Row>
-      </bs.Container>
-      <bs.Container className={styles.grayLayer}>
+        <bs.Row className={styles.grayLayer}>
+          <bs.Col>
+            <br/>
+            <CardNoButton 
+              content={
+                <ul className={styles.cardUl}>
+                  <li>Enable employees to work anywhere</li>
+                  <li>Develop a first-class balance of producivity and security to suit your business</li>
+                  <li>Deliver the foremost apps, tools and modern services into your employees hands</li>
+                </ul>
+                } 
+              title="Digitialise workspaces" 
+              img="https://placeimg.com/280/180/any"
+            />
+            <br/>
+          </bs.Col>
+          <bs.Col>
+            <br/>
+            <CardNoButton 
+              content={
+                <ul className={styles.cardUl}>
+                  <li>Reduce oxpenditure on IT</li>
+                  <li>Be first to market</li>
+                  <li>Increase flexibility</li>
+                </ul>
+                } 
+                title="Increase revenue" 
+                img="https://placeimg.com/280/180/any"
+            />
+            <br/>
+          </bs.Col>
+          <bs.Col>
+            <br/>
+            <CardNoButton 
+              content={
+              <ul className={styles.cardUl}>
+                <li>Increase collaboration, innovations and agility</li>
+                <li>Increase business creativity and performance</li>
+                <li>Strengthen talent recruitment and retention</li>
+              </ul>
+              } 
+              title="Empower staff" 
+              img="https://placeimg.com/280/180/any"
+            />
+            <br/>
+          </bs.Col>
+        </bs.Row>
       </bs.Container>
     </div>
   );

@@ -1,0 +1,27 @@
+
+.grayLayer{
+  background-color: gray;
+  color:black;
+  min-height:300px;
+}
+
+.heroImageOverlay{
+  //object-fit: cover;
+  background: url(../img/hands.png) no-repeat;
+  background-size: 100% 100%;
+  min-height:500px;
+  max-width:100%;
+  img{
+   max-width:100%;
+  }
+}
+.heroImageOverlay > 
+.fontWhite{
+  color:black;
+}
+.cardUl{
+  li{
+    list-style-type: none;
+    margin-left:-40px;
+  }
+}
