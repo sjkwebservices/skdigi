@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 
 
 export default function Services() {
@@ -7,9 +7,12 @@ export default function Services() {
 
         <main className={styles.main}>
           <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
-          </h1>
+            Modern Office Synergies
 
+          </h1>
+        <p>
+          menu on this page for all connecting of employees stratergies and office design
+        </p>
         </main>
       </div>
     );
