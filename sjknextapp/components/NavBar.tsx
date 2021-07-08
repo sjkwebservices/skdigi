@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export const NavBar: React.FunctionComponent<any> = props => {
     return(
         <bs.Navbar bg="light" expand="lg">
-            <bs.Navbar.Brand href="https://www.synergizer.com.au/">Synergizer</bs.Navbar.Brand>
+            <bs.Navbar.Brand href="https://synergizer.com.au">Synergizer</bs.Navbar.Brand>
               <bs.Navbar.Toggle aria-controls="basic-bs.Navbar-bs.Nav" />
                 <bs.Navbar.Collapse id="basic-bs.Navbar-bs.Nav">
                   <bs.Nav className="mr-auto">
