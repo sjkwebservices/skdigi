@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.scss';
 
 import * as bs from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from '../components/NavBar';
 import { CardNoButton } from '../components/CardNoButton';
 
@@ -21,15 +21,16 @@ export default function Home() {
         <bs.Row>
           <bs.Col>
           {/*  // for breadcrumbs // */}
+          <div className={styles.fontWhite}>
+              <h1>Connecting business</h1>
+            </div>
           </bs.Col>
         </bs.Row>
       </bs.Container>
       <bs.Container fluid >
         <bs.Row>
           <bs.Col sm={12} className={ styles.heroImageOverlay }>
-            <div className={styles.fontWhite}>
-              <h1>Connect your employees</h1>
-            </div>
+            
           </bs.Col>
         </bs.Row>
         <bs.Row className={styles.grayLayer}>
@@ -43,7 +44,7 @@ export default function Home() {
                   <li>Deliver the foremost apps, tools and modern services into your employees hands</li>
                 </ul>
                 } 
-              title="Digitialise workspaces" 
+              title="Digital workspaces" 
               img="https://placeimg.com/280/180/any"
             />
             <br/>
@@ -53,7 +54,7 @@ export default function Home() {
             <CardNoButton 
               content={
                 <ul className={styles.cardUl}>
-                  <li>Reduce oxpenditure on IT</li>
+                  <li>Reduce expenditure on IT</li>
                   <li>Be first to market</li>
                   <li>Increase flexibility</li>
                 </ul>
