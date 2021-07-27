@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'synergizer'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_c73f45b76feb48c089dd2b7a010f03c7 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e5c8400391b8419dbebb7ae9ed6cf27b }}
         package: .
