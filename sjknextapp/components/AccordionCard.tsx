@@ -12,7 +12,10 @@ export const AccordionCard: React.FunctionComponent<any> = props => {
             </bs.Accordion.Toggle>
             </bs.Card.Header>
             <bs.Accordion.Collapse eventKey={props.evKey}>
-            <bs.Card.Body>{props.body}</bs.Card.Body>
+            <bs.Card.Body>
+                {props.body} <br/>
+                <bs.Button variant={props.variant} onChange={props._onClick}>{props.btnText}</bs.Button>
+            </bs.Card.Body>
             </bs.Accordion.Collapse>
         </bs.Card>
     );
