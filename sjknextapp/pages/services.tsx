@@ -8,13 +8,15 @@ import { AccordionCard } from '../components/AccordionCard';
 import Image from 'next/image'
 import profilePic from '../public/collab-01.jpg'
 
-export const onClick = () =>{
-  alert('test');
-};
-
-function _onClick(id:number){
-  console.log(id);
+const handleClick1 = (e:React.SyntheticEvent) =>  {
+  e.preventDefault();
+  console.log('Free pizza1!');
 }
+const handleClick2 = (e:React.SyntheticEvent) =>  {
+  e.preventDefault();
+  console.log('Free pizza2!');
+}
+
 
 export default function Services() {
 
@@ -30,7 +32,7 @@ export default function Services() {
         </bs.Container>
         <bs.Container fluid>
           <bs.Row className={styles.blueLayer}>
-            <bs.Col md={6} sm={6}>
+            <bs.Col md={6} sm={12}>
               <br/>
               <bs.Accordion defaultActiveKey="0">
                 <AccordionCard 
@@ -39,7 +41,7 @@ export default function Services() {
                   evKey="0" 
                   variant="primary"
                   btnText="More information"
-                  onClick={_onClick(1)}
+                  onClick={handleClick1}
                 />
                 <AccordionCard
                   title="Web Design" 
@@ -47,12 +49,12 @@ export default function Services() {
                   evKey="1" 
                   variant="primary"
                   btnText="More information"
-                  onClick={_onClick(2)}
+                  onClick={handleClick2}
                 />
               </bs.Accordion>
               <br/>
             </bs.Col>
-            <bs.Col  className={styles.right}  md={6} sm={6}   >
+            <bs.Col  className={styles.right}  md={6} sm={12}   >
               <Image src={profilePic} />
             </bs.Col>
           </bs.Row>

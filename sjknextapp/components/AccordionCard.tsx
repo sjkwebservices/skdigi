@@ -14,7 +14,7 @@ export const AccordionCard: React.FunctionComponent<any> = props => {
             <bs.Accordion.Collapse eventKey={props.evKey}>
             <bs.Card.Body>
                 {props.body} <br/>
-                <bs.Button variant={props.variant} onChange={props._onClick}>{props.btnText}</bs.Button>
+                <bs.Button variant={props.variant} onClick={props.onClick}>{props.btnText}</bs.Button>
             </bs.Card.Body>
             </bs.Accordion.Collapse>
         </bs.Card>
