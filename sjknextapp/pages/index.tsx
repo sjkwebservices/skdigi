@@ -1,7 +1,8 @@
 import styles from '../styles/Home.module.scss';
 
 import * as bs from 'react-bootstrap';
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { NavBar } from '../components/NavBar';
 import { CardNoButton } from '../components/CardNoButton';
 
@@ -20,9 +21,9 @@ export default function Home() {
       <bs.Container fluid>
         <bs.Row>
           <bs.Col>
-          {/*  // for breadcrumbs // */}
-          <div className={styles.fontWhite}>
-              <h1>Connecting business</h1>
+            {/*  // for breadcrumbs // */}
+            <div className={`${styles.fontWhite} ${styles.txtCenter}`}>
+                <h1>Connecting Business</h1>
             </div>
           </bs.Col>
         </bs.Row>
@@ -30,7 +31,6 @@ export default function Home() {
       <bs.Container fluid >
         <bs.Row>
           <bs.Col sm={12} className={ styles.heroImageOverlay }>
-            
           </bs.Col>
         </bs.Row>
         <bs.Row className={styles.grayLayer}>

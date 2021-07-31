@@ -1,10 +1,4 @@
 
-.grayLayer{
-  background-color: gray;
-  color:black;
-  min-height:300px;
-}
-
 .heroImageOverlay{
   //object-fit: cover;
   background: url(../img/hands.png) no-repeat;
@@ -14,13 +8,38 @@
    max-width:100%;
   }
 }
-.heroImageOverlay > 
-.fontWhite{
+.grayLayer{
+  background-color: gray;
   color:black;
+  min-height:300px;
+}
+.blueLayer{
+  background-color: #02385f;
+  color:black;
+  min-height:300px;
+  padding: 25px 0 25px 0;
+  div.card-header > button{
+    margin-left:-20px;
+  }
+}
+.heroImageOverlay{
+  .fontWhite{
+    color:white;
+  }
 }
 .cardUl{
+  a{ margin-left:-40px; }
   li{
     list-style-type: none;
     margin-left:-40px;
   }
+}
+.right{
+  position:relative !important;
+  padding-right:0px !important;
+}
+
+//FONT
+.txtCenter{
+  text-align:center;
 }
